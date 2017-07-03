@@ -1,0 +1,36 @@
+@import "https://fonts.googleapis.com/css?family=Droid+Serif"
+@import flexboxgrid
+
+$color0 : #fff
+$color1 : tomato
+$color2 : #d9e1e8
+$color3 : #a8afc4
+$color4 : #2b2d46
+$font-main : 'Helvetica Neue', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif
+$font-secondary : 'Droid Serif', serif
+
+body
+  font-family: $font-main
+  font-size: 16px
+  line-height: 1.4rem
+
+// Headings
+h1, h2, h3
+  font-family: $font-secondary
+
+// Links
+a
+  text-decoration: none
+  color: $color1
+  &:hover, &:active
+    color: desaturate(darken($color1, 20%), 20%)
+
+// Main Layout
+.container
+  max-width: 960px
+  margin: auto
+
+// Header
+header
+  margin: 30px 0
+  border-bottom: 1px solid $color2
